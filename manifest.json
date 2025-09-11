@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Deer Direct - Bluesky to Deer Redirect",
+  "version": "1.0",
+  "description": "Automatically redirects bsky.app links to deer.social",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["https://bsky.app/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "content_scripts": [],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
