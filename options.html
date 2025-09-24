@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Deer Direct Settings</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial, sans-serif;
+        margin: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+      input[type="text"] {
+        width: 320px;
+        padding: 8px;
+        font-size: 14px;
+      }
+      button {
+        margin-top: 12px;
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+      .row {
+        margin-bottom: 8px;
+      }
+      .hint {
+        color: #555;
+        font-size: 12px;
+      }
+      .ok {
+        color: #2e7d32;
+      }
+      .error {
+        color: #c62828;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Deer Direct Settings</h2>
+    <div class="row">
+      <label for="destination">Destination domain</label>
+      <input id="destination" type="text" placeholder="deer.social" />
+      <div class="hint">
+        Only the domain, without protocol or path. Example: deer.social
+      </div>
+    </div>
+    <button id="save">Save</button>
+    <span id="status" class="hint"></span>
+
+    <script src="options.js"></script>
+  </body>
+</html>
